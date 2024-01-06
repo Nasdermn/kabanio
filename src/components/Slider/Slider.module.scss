@@ -1,0 +1,120 @@
+$arrowSize: 25px;
+$borderSize: 2px;
+
+.slider {
+  box-sizing: border-box;
+  border: 2px solid #000;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 75vh;
+  padding: 0 2vw;
+
+  &__sidebar {
+    height: 100%;
+    width: 35%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease-in-out;
+    border-right: $borderSize solid #fff;
+  }
+
+  &__slide {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+  }
+
+  &__slidetitle {
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: auto;
+
+    @media (max-width: 500px) {
+      & {
+        font-size: 7vw;
+      }
+    }
+  }
+
+  &__slidesubtitle {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: auto;
+
+    @media (max-width: 500px) {
+      & {
+        font-size: 5vw;
+      }
+    }
+  }
+
+  &__mainslide {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 35%;
+    width: 65%;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  &__photo {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__controls {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    left: 35%;
+    top: 50%;
+    z-index: 100;
+    margin-left: -$arrowSize;
+  }
+
+  &__btn {
+    width: $arrowSize;
+    height: $arrowSize;
+    border: 1px solid #000;
+    cursor: pointer;
+    outline: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.5s ease;
+
+    &:hover {
+      transform: scale(0.85);
+    }
+    &:active {
+      background-color: #f00;
+    }
+  }
+
+  &__btn_up {
+    background-image: url('./../../assets/uparrow.svg');
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  &__btn_down {
+    background-image: url('./../../assets/downarrow.svg');
+    grid-column: 1;
+    grid-row: 1;
+  }
+}

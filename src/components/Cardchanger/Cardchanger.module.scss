@@ -1,0 +1,51 @@
+.cardchanger {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px double #000;
+
+  &__card {
+    position: relative;
+    min-height: 75vh;
+    cursor: pointer;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.7s ease-in-out;
+
+    &_active {
+      flex: 6;
+    }
+
+    &:not(:last-child) {
+      border-right: 0.15vw solid #000;
+    }
+  }
+
+  &__cardtitle {
+    position: absolute;
+    font-size: 24px;
+    bottom: 10px;
+    left: 10px;
+    margin: 0;
+    opacity: 0;
+    color: #fff;
+
+    &_active {
+      opacity: 1;
+      transition: opacity 1s ease-in;
+    }
+
+    @media (max-width: 500px) {
+      & {
+        font-size: 8vw;
+        bottom: 2vw;
+        left: 2vw;
+      }
+    }
+  }
+}

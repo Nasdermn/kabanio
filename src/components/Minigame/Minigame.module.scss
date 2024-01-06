@@ -1,0 +1,143 @@
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.minigame {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border: 5px double #000;
+  overflow: hidden;
+
+  &__screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    transition: margin 0.5s ease-out;
+    background: linear-gradient(90deg, #29323c 0%, #485563 100%);
+  }
+
+  &__title {
+    margin: 0 0 50px;
+    font-size: 48px;
+    line-height: auto;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+  }
+
+  &__start {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 23vw;
+    height: 3vw;
+    max-width: 460px;
+    max-height: 60px;
+    border: 1px solid #000;
+    border-radius: 25px;
+    background-color: chartreuse;
+    padding: 10px;
+    margin: 0 0 20%;
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+    line-height: auto;
+    font-weight: 400;
+    transition: all 0.2s ease;
+
+    &:hover {
+      transform: scale(0.95);
+      color: #ca116a;
+      border-color: #ca116a;
+    }
+  }
+
+  &__timelist {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 25px;
+    margin-bottom: 20%;
+  }
+
+  &__button {
+    background-color: transparent;
+    border: 2px solid #000;
+    border-radius: 25px;
+    color: #000;
+    cursor: pointer;
+    font-size: 24px;
+    line-height: auto;
+    font-weight: 400;
+    padding: 10px 15px;
+    transition: all 0.5s ease;
+
+    &:hover {
+      border-color: #16d9e3;
+      color: #16d9e3;
+      transform: scale(0.9);
+    }
+  }
+
+  &__time {
+    margin: 0 0 50px;
+    font-size: 36px;
+    line-height: auto;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+  }
+
+  &__result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20%;
+  }
+
+  &__board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 90%;
+    height: 90%;
+    background: linear-gradient(118.38deg, #29323c -4.6%, #485563 200.44%);
+    border: 1px solid #000;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+
+  @media (max-width: 799px) {
+    &__start {
+      font-size: 4vw;
+    }
+  }
+
+  @media (max-width: 499px) {
+    &__title {
+      font-size: 6vw;
+    }
+
+    &__button {
+      font-size: 5vw;
+      padding: 1vw 2vw;
+    }
+
+    &__time {
+      font-size: 5vw;
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
