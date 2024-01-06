@@ -8,6 +8,7 @@
   box-sizing: border-box;
   width: 100%;
   height: 100%;
+  max-width: 1200px;
   border: 5px double #000;
   overflow: hidden;
 
@@ -44,7 +45,7 @@
     border-radius: 25px;
     background-color: chartreuse;
     padding: 10px;
-    margin: 0 0 20%;
+    margin: 0 0 15vh;
     text-decoration: none;
     color: #000;
     font-size: 24px;
@@ -64,7 +65,7 @@
     list-style: none;
     padding: 0;
     gap: 25px;
-    margin-bottom: 20%;
+    margin-bottom: 15vh;
   }
 
   &__button {
@@ -100,7 +101,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20%;
+    margin-bottom: 15vh;
   }
 
   &__board {
