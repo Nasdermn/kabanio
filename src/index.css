@@ -5,7 +5,13 @@
   font-family: 'Inter', 'Arial', sans-serif;
   max-width: 1920px;
   width: 100%;
-  background-image: linear-gradient(30deg, #000 15%, #5a1616 40%, #5a1616 75%, #ff0202 90%);
+  background-image: linear-gradient(
+    30deg,
+    #000 15%,
+    #5a1616 40%,
+    #5a1616 75%,
+    #ff0202 90%
+  );
   display: flex;
   justify-content: center;
   overflow: hidden;
@@ -21,9 +27,9 @@
   width: 30vw;
   height: 7vw;
   max-width: 250px;
-  min-width: 40px;
+  min-width: 70px;
   max-height: 60px;
-  min-height: 11px;
+  min-height: 20px;
   margin: 0 auto;
   outline: 0;
   background-color: #b51313;
@@ -36,7 +42,7 @@
   color: #000;
   cursor: pointer;
   transition: all 0.4s ease;
-  border-radius: 2vw;
+  border-radius: 20px;
 }
 
 .backbtn:hover {
