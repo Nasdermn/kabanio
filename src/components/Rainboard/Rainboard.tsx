@@ -13,7 +13,7 @@ function Rainboard() {
     setCurrentColor(color.hex);
   };
 
-  const handleMouseDown = (event: Event) => {
+  const handleMouseDown = (event: React.MouseEvent<HTMLDivElement>) => {
     event.preventDefault();
     setIsDrawing(true);
   };
