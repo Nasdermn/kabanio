@@ -65,8 +65,8 @@
   &__timelist {
     display: flex;
     list-style: none;
-    padding: 0;
-    gap: 25px;
+    padding: 0 3vw;
+    gap: 4vw;
     margin-bottom: 15vh;
   }
 
@@ -123,16 +123,16 @@
     &__start {
       font-size: 4vw;
     }
+
+    &__button {
+      font-size: 4vw;
+      padding: 1vw 2vw;
+    }
   }
 
   @media (max-width: 499px) {
     &__title {
       font-size: 6vw;
-    }
-
-    &__button {
-      font-size: 5vw;
-      padding: 1vw 2vw;
     }
 
     &__time {
