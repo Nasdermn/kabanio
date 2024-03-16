@@ -1,5 +1,5 @@
-$arrowSize: 25px;
-$borderSize: 2px;
+$arrowSize: 5vw;
+$borderSize: 1vw;
 
 .slider {
   box-sizing: border-box;
@@ -84,16 +84,22 @@ $borderSize: 2px;
     left: 35%;
     top: 50%;
     z-index: 100;
-    margin-left: -$arrowSize;
+    margin-left: -25px;
+
+    @media (max-width: 500px) {
+      & {
+        margin-left: -$arrowSize;
+      }
+    }
   }
 
   &__btn {
-    width: $arrowSize;
-    height: $arrowSize;
+    width: 25px;
+    height: 25px;
     border: 1px solid #000;
     cursor: pointer;
     outline: none;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     transition: transform 0.5s ease;
@@ -104,16 +110,23 @@ $borderSize: 2px;
     &:active {
       background-color: #f00;
     }
+
+    @media (max-width: 500px) {
+      & {
+        width: $arrowSize;
+        height: $arrowSize;
+      }
+    }
   }
 
   &__btn_up {
-    background-image: url('./../../assets/uparrow.svg');
+    background-image: url('./../../images/uparrow.svg');
     grid-column: 2;
     grid-row: 2;
   }
 
   &__btn_down {
-    background-image: url('./../../assets/downarrow.svg');
+    background-image: url('./../../images/downarrow.svg');
     grid-column: 1;
     grid-row: 1;
   }

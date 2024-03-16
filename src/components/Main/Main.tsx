@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 import styles from './Main.module.scss';
-import cardchanger from '../../assets/cardchanger.png';
-import slider from '../../assets/slider.png';
-import rainboard from '../../assets/rainboard.png';
-import minigame from '../../assets/minigame.png';
+import cardchanger from '../../images/previews/cardchanger.png';
+import slider from '../../images/previews/slider.png';
+import rainboard from '../../images/previews/rainboard.png';
+import minigame from '../../images/previews/minigame.png';
 
 function Main() {
   return (

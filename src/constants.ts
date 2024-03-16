@@ -1,55 +1,56 @@
+import tigerPhoto from './images/animals/tiger.png';
+import wolfPhoto from './images/animals/wolf.png';
+import bearPhoto from './images/animals/bear.png';
+import hogPhoto from './images/animals/hog.png';
+import skunkPhoto from './images/animals/skunk.png';
+import rainbowImg from './images/atmPh/rainbow.png';
+import blizzardImg from './images/atmPh/blizzard.png';
+import tornadoImg from './images/atmPh/tornado.png';
+import lightningImg from './images/atmPh/lightning.png';
+import rainImg from './images/atmPh/rain.png';
+import northernLightsImg from './images/atmPh/northernLights.png';
+
 export const CARDS = [
   {
-    imageUrl:
-      'https://images.unsplash.com/photo-1605092676920-8ac5ae40c7c8?q=80&w=2565&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    imageUrl: tigerPhoto,
     title: 'Топ 5: Тигр',
   },
   {
-    imageUrl:
-      'https://images.unsplash.com/photo-1572363420552-058bd41af8c7?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    imageUrl: wolfPhoto,
     title: 'Топ 4: Волк',
   },
   {
-    imageUrl:
-      'https://images.unsplash.com/photo-1635866869385-fabb68f0dea0?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    imageUrl: bearPhoto,
     title: 'Топ 3: Медведь',
   },
   {
-    imageUrl:
-      'https://images.unsplash.com/photo-1596559613252-433b97a789db?auto=format&fit=crop&q=80&w=1364',
+    imageUrl: hogPhoto,
     title: 'Топ 2: Кабан',
   },
   {
-    imageUrl:
-      'https://images.unsplash.com/photo-1561493642-b808bc5a81de?q=80&w=2674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    imageUrl: skunkPhoto,
     title: 'Топ 1: Скунс',
   },
 ];
 
 export const SLIDES = [
   {
-    imageUrl:
-      'https://images.unsplash.com/photo-1526813951498-5498cce49cdf?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    imageUrl: rainbowImg,
   },
   {
-    imageUrl:
-      'https://images.unsplash.com/photo-1516811575088-1de3bbf3563a?auto=format&fit=crop&q=80&w=1469&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    imageUrl: blizzardImg,
   },
   {
-    imageUrl:
-      'https://images.unsplash.com/photo-1612200167265-a68d1519332f?auto=format&fit=crop&q=80&w=2565&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    imageUrl: tornadoImg,
   },
   {
-    imageUrl:
-      'https://images.unsplash.com/photo-1472145246862-b24cf25c4a36?auto=format&fit=crop&q=80&w=1471&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    imageUrl: lightningImg,
   },
   {
-    imageUrl:
-      'https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?auto=format&fit=crop&q=80&w=1287&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    imageUrl: rainImg,
   },
   {
-    imageUrl:
-      'https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&q=80&w=1365&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    imageUrl: northernLightsImg,
   },
 ];
 
